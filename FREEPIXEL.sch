@@ -747,49 +747,54 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </packages>
 <symbols>
 <symbol name="WS2812BLED">
-<pin name="VDD" x="5.08" y="15.24" visible="pin" length="middle" direction="pwr" rot="R270"/>
-<pin name="DI" x="-12.7" y="-2.54" visible="pin" length="middle" direction="in"/>
-<pin name="GND" x="0" y="-10.16" visible="pin" length="middle" direction="pwr" rot="R90"/>
-<pin name="DO" x="12.7" y="-2.54" visible="pin" length="middle" direction="out" rot="R180"/>
-<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-2.54" x2="7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-6.35" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="3.81" y2="5.08" width="0.254" layer="94"/>
-<wire x1="3.81" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-6.35" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="5.08" x2="-1.27" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="-1.27" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-3.81" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-3.81" y2="5.08" width="0.254" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-5.08" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-4.064" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<text x="-4.064" y="8.382" size="1.27" layer="94">WS2812B</text>
-<wire x1="-3.81" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="5.08" y1="10.16" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="VDD" x="-10.16" y="5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="DI" x="10.16" y="5.08" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="GND" x="10.16" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="DO" x="-10.16" y="-5.08" visible="pin" length="short" direction="out"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0.254" y1="-4.572" x2="0.254" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="2.794" y1="-3.302" x2="0.254" y2="-4.572" width="0.254" layer="94"/>
+<wire x1="2.286" y1="3.302" x2="-0.254" y2="4.572" width="0.254" layer="94"/>
+<wire x1="-0.254" y1="4.572" x2="-0.254" y2="3.302" width="0.254" layer="94"/>
+<wire x1="2.794" y1="-4.572" x2="2.794" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="2.286" y1="3.302" x2="2.286" y2="4.572" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-3.302" x2="0.254" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.254" y1="3.302" x2="-1.524" y2="3.302" width="0.254" layer="94"/>
+<wire x1="0.254" y1="-3.302" x2="0.254" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="2.794" y1="-3.302" x2="0.254" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="-0.254" y1="2.032" x2="2.286" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-0.254" y1="2.032" x2="-0.254" y2="3.302" width="0.254" layer="94"/>
+<wire x1="2.794" y1="-3.302" x2="4.064" y2="-3.302" width="0.254" layer="94"/>
+<text x="-6.604" y="8.382" size="1.016" layer="94">WS2812B</text>
+<wire x1="2.794" y1="-2.032" x2="2.794" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.286" y1="3.302" x2="2.286" y2="2.032" width="0.254" layer="94"/>
+<wire x1="2.286" y1="3.302" x2="3.556" y2="3.302" width="0.254" layer="94"/>
+<text x="-4.064" y="2.286" size="1.778" layer="94">R</text>
+<text x="-3.81" y="-0.762" size="1.778" layer="94">G</text>
+<text x="-3.302" y="-4.064" size="1.778" layer="94">B</text>
+<wire x1="1.524" y1="-2.286" x2="2.032" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-1.778" x2="2.032" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-2.032" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="2.032" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.016" x2="1.778" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.778" y1="1.524" x2="1.778" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.778" y1="1.27" x2="1.524" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.524" y1="1.524" x2="1.778" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="4.318" x2="1.524" y2="4.826" width="0.254" layer="94"/>
+<wire x1="1.524" y1="4.826" x2="1.524" y2="4.572" width="0.254" layer="94"/>
+<wire x1="1.524" y1="4.572" x2="1.27" y2="4.826" width="0.254" layer="94"/>
+<wire x1="1.27" y1="4.826" x2="1.524" y2="4.826" width="0.254" layer="94"/>
 </symbol>
 <symbol name="M03">
 <wire x1="3.81" y1="-5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
@@ -1036,7 +1041,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="7.366" y="9.398" size="1.778" layer="94">(C)2016 Freetronics Pty Ltd: www.freetronics.com.au</text>
 <text x="7.366" y="6.35" size="1.778" layer="94">Released under the TAPR Open Hardware License: www.tapr.org/ohl</text>
 <text x="68.326" y="14.478" size="1.778" layer="94">www.freetronics.com.au/freepixel</text>
-<text x="7.62" y="27.178" size="1.778" layer="94">WS2812B Operating Voltage: 3.3V to 5.5V</text>
+<text x="7.62" y="27.178" size="1.778" layer="94">WS2812B Operating Voltage: 5V to 7V</text>
 <text x="12.7" y="72.898" size="1.778" layer="94">--&gt;</text>
 <text x="154.94" y="72.898" size="1.778" layer="94">--&gt;</text>
 <frame x1="0" y1="0" x2="190.5" y2="127" columns="8" rows="5" layer="94"/>
@@ -1067,20 +1072,26 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="43.18" y1="50.8" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="50.8" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="50.8" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="68.58" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
 <label x="134.62" y="68.58" size="1.778" layer="95"/>
 <pinref part="J2" gate="G$1" pin="3"/>
 <pinref part="LED1" gate="G$1" pin="GND"/>
-<wire x1="83.82" y1="63.5" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
-<junction x="83.82" y="50.8"/>
+<wire x1="93.98" y1="68.58" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="68.58" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
+<junction x="96.52" y="50.8"/>
 </segment>
 </net>
 <net name="SDI" class="0">
 <segment>
-<wire x1="30.48" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="71.12" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="71.12" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="86.36" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="83.82" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="78.74" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
 <label x="33.02" y="71.12" size="1.778" layer="95"/>
 <pinref part="LED1" gate="G$1" pin="DI"/>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -1088,7 +1099,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="SDO" class="0">
 <segment>
-<wire x1="96.52" y1="71.12" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="68.58" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="58.42" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="71.12" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
 <label x="134.62" y="71.12" size="1.778" layer="95"/>
 <pinref part="LED1" gate="G$1" pin="DO"/>
 <pinref part="J2" gate="G$1" pin="2"/>
@@ -1110,11 +1125,13 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="132.08" y1="73.66" x2="132.08" y2="91.44" width="0.1524" layer="91"/>
 <label x="134.62" y="73.66" size="1.778" layer="95"/>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="91.44" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="91.44" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="VDD"/>
-<wire x1="88.9" y1="91.44" x2="132.08" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="91.44" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
-<junction x="88.9" y="91.44"/>
+<wire x1="71.12" y1="91.44" x2="132.08" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="91.44" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="81.28" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="78.74" x2="73.66" y2="78.74" width="0.1524" layer="91"/>
+<junction x="71.12" y="91.44"/>
 </segment>
 </net>
 </nets>
