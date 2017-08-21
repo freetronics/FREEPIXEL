@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1036,9 +1036,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <sheet>
 <plain>
 <text x="7.62" y="20.32" size="3.048" layer="94">FreePixel RGB LED Module</text>
-<text x="38.1" y="14.478" size="1.778" layer="94">V1.0 (2016-03-07)</text>
+<text x="38.1" y="14.478" size="1.778" layer="94">V1.1 (2017-08-21)</text>
 <text x="7.62" y="14.478" size="1.778" layer="94">SKU: FREEPIXEL</text>
-<text x="7.366" y="9.398" size="1.778" layer="94">(C)2016 Freetronics Pty Ltd: www.freetronics.com.au</text>
+<text x="7.366" y="9.398" size="1.778" layer="94">(C)2017 Freetronics Pty Ltd: www.freetronics.com.au</text>
 <text x="7.366" y="6.35" size="1.778" layer="94">Released under the TAPR Open Hardware License: www.tapr.org/ohl</text>
 <text x="68.326" y="14.478" size="1.778" layer="94">www.freetronics.com.au/freepixel</text>
 <text x="7.62" y="27.178" size="1.778" layer="94">WS2812B Operating Voltage: 5V to 7V</text>
